@@ -1,11 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import styled from 'styled-components/native';
+
+const Text = styled.Text`
+  font-size: 18px;
+  color: blue;
+  font-weight: 500;
+`;
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Teste</Text>
+      <Text>Componente criado com Styled Components</Text>
       <StatusBar style="auto" />
     </View>
   );
