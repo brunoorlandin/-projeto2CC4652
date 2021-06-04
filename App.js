@@ -1,28 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import styled from 'styled-components/native';
+import AddMesureScreen from './screens/AddMesure';
+import MeasureListScreen from './screens/MeasureList';
+import MeasureStatsScreen from './screens/MeasureStats';
+import { NavigationContainer } from '@react-navigation/native';
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 
-const Text = styled.Text`
-  font-size: 18px;
-  color: blue;
-  font-weight: 500;
-`;
+const Tab = createMaterialBottomTabNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Componente criado com Styled Components</Text>
-      <StatusBar style="auto" />
-    </View>
+      <NavigationContainer>
+        <Tab.Navigator>
+          <Tab.Screen name="Adicionar" component={AddMesureScreen} />
+          <Tab.Screen name="Listagem" component={MeasureListScreen} />
+          <Tab.Screen name="Stats" component={MeasureStatsScreen} />
+        </Tab.Navigator>
+      </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
