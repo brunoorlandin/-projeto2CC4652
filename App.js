@@ -9,12 +9,17 @@ const Tab = createMaterialBottomTabNavigator();
 
 export default function App() {
   return (
-      <NavigationContainer>
-        <Tab.Navigator>
-          <Tab.Screen name="Adicionar" component={AddMesureScreen} />
-          <Tab.Screen name="Listagem" component={MeasureListScreen} />
-          <Tab.Screen name="Stats" component={MeasureStatsScreen} />
-        </Tab.Navigator>
-      </NavigationContainer>
+        
+         
+            <NavigationContainer>
+              <Tab.Navigator>
+                <Tab.Screen name="Adicionar" component={AddMesureScreen} />
+                <Tab.Screen name="Listagem" component={MeasureListScreen} />
+                <Tab.Screen name="Stats" component={MeasureStatsScreen} />
+              </Tab.Navigator>
+            </NavigationContainer>
+          
+        
+      
   );
 }
