@@ -1,1 +1,23 @@
-import styled from 'styled-components/native';
+import {StyleSheet} from 'react-native';
+
+const estilos = StyleSheet.create({
+  texto:{
+    marginBottom: '2%',
+    marginRight: '10%',
+    marginTop: '2%'
+  },
+  card:{
+    borderWidth: '1px',
+    borderColor: 'blue',
+    paddingLeft: '5%',
+    display: 'flex',
+    marginTop: '10px'
+  },
+  linha:{
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  }
+})
+
+export default estilos;
