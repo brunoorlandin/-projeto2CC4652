@@ -7,11 +7,11 @@ const estilos = StyleSheet.create({
     marginTop: '2%'
   },
   card:{
-    borderWidth: '1px',
+    borderWidth: 1,
     borderColor: 'blue',
     paddingLeft: '5%',
     display: 'flex',
-    marginTop: '10px'
+    marginTop: 10
   },
   linha:{
     display: 'flex',

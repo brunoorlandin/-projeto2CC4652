@@ -7,9 +7,9 @@ const estilos = StyleSheet.create({
     textAlign: "center"
   },
   input:{
-    borderWidth: '1px',
+    borderWidth: 1,
     borderColor: 'black',
-    borderRadius: '10px',
+    borderRadius: 10,
     fontSize: 30,
     textAlign: 'center'
   },
