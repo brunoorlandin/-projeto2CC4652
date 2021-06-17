@@ -4,6 +4,7 @@ import { SafeAreaProvider, SafeAreaView  } from 'react-native-safe-area-context'
 import Header from '../../components/Header';
 import {View, Button, Text} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import estilos from './styles'
 
 let lista = [];
 
@@ -95,21 +96,21 @@ export default function MeasureStatsScreen(){
             />
           </View>
       
-            <View>
+            <View style={estilos.container}>
               <Title>Média das pressões</Title>
-              <Text>Sistólica: {media}</Text>
-              <Text>Diastólica: {mediaDis}</Text>
-              <Text>BPM: {mediaBpm}</Text>
+              <Text style={estilos.texto}>Sistólica: {media}</Text>
+              <Text style={estilos.texto}>Diastólica: {mediaDis}</Text>
+              <Text style={estilos.texto}>BPM: {mediaBpm}</Text>
             </View>
 
-            <View>
+            <View style={estilos.container}>
               <Title>Máximos e Mínimos</Title>
-                <Text>Pico Sistólica: {maior}</Text>
-                <Text>Pico Diastólica: {maiorDis}</Text>
-                <Text>Pico BPM: {maiorBpm}</Text>
-                <Text>menor Sistólica: {menor}</Text>
-                <Text>menor Diastólica: {menorDis}</Text>
-                <Text>menor BPM: {menorBpm}</Text>
+                <Text style={estilos.texto}>Pico Sistólica: {maior}</Text>
+                <Text style={estilos.texto}>Pico Diastólica: {maiorDis}</Text>
+                <Text style={estilos.texto}>Pico BPM: {maiorBpm}</Text>
+                <Text style={estilos.texto}>Menor Sistólica: {menor}</Text>
+                <Text style={estilos.texto}>Menor Diastólica: {menorDis}</Text>
+                <Text style={estilos.texto}>Menor BPM: {menorBpm}</Text>
             </View>
         </Wrapper>
     );
